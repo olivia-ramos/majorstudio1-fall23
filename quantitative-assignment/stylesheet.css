@@ -1,0 +1,56 @@
+body {
+    background-color: #D1BD9A;
+  }
+img {
+    width: 100%;
+    height: 100%;
+  }
+svg {
+    width: 100%;
+    height: 100%;
+    background-color: #D1BD9A;
+  }
+text {
+    font-family: 'Coustard', Futura, serif;
+    font-size: 15px;
+    fill: #000000;
+  }
+.grid path {
+    stroke-width: 0;
+    stroke: #333333;
+  }
+.grid .tick line {
+    stroke: #333333;
+    stroke-width: 0.3px;
+    stroke-opacity: 0.3;
+  }
+text.x-label {
+    font-size: 15px;
+    font-weight: 400;
+    fill: #000000;
+  }
+text.y-label {
+    font-size: 15px;
+    font-weight: 400;
+    fill: #000000;
+    transform: rotate(270deg);
+  }
+text.source {
+    font-size: 8px;
+    fill: #000000;
+  }
+.tooltip {
+    background-color: #D1BD9A;
+    font-family: 'Coustard', Futura, serif;
+    font-size: 10px;
+    fill: #000000;
+    /* position:relative; */
+
+}
+
+  /* .tooltip:hover .tooltip {
+    visibility: visible;
+} */
+  /* .legend{
+    font-size: 12px;
+  } */
