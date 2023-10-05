@@ -4,7 +4,7 @@ const objectEndpoint =
 let objects;
 
 function setup() {
-  d3.selectAll(".ex")
+  d3.selectAll(".ex")// creates an array, that's why we use "i" later
     .select("button")
     .attr("disabled", true)
     // we can set event handlers on D3 selections with `.on`
@@ -27,7 +27,7 @@ function setup() {
       objects = data;
       d3.selectAll(".ex")
         .select("button")
-        .attr("disabled", null);
+        .attr("disabled", null); // same concept as saying "loading"
     });
   });
 }
@@ -41,7 +41,7 @@ function runExercise(number) {
     let i = 0;
     d3.interval(() => {
       draw2(objects.slice(0, lens[i]));
-      i = (i + 1) % lens.length;
+      i = (i + 1) % lens.length; // 4 % 3 =1 (does 3 fit into 4? yes the remainder is 1) // 3 % 4 = 0 (does 44 fit into 3? no, the remainder is 3)
       console.log(i);
     }, 2000);
   } else if (number === 3) {
