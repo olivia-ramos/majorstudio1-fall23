@@ -18,7 +18,7 @@ drawAllSVGs();
 // Draw SVG graphics using D3
 function drawIntoSVG() {
   // select the first svg object
-  const svg = d3.select(".ex-1 svg"); // this is a D3 selection
+const svg = d3.select(".ex-1 svg"); // this is a D3 selection
 
   //  draw a circle
   svg

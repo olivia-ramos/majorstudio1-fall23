@@ -82,6 +82,8 @@ function createButtons(data) {
 // a helper function for changing the state of our button
 function activeButton(className) {
     d3.select(`input:nth-child(${index+1})`).attr("class", className);
+        //^^ nth-child is a javascript way of selecting all elements in a parent dom tree 
+
 }
 
 function clearOldData() {
