@@ -73,7 +73,7 @@ function draw() {
     .selectAll(".section")
     .classed("current", (_, i) => i === currentIndex);//saying whatever the one we're in now has a new class that we're gonna name current. the underscore is saying we aren't using d, just i! "nothing, i"
 
-  const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""); //note we're splitting on nothing, not the space. this breaks it up by letter. if we have separate words we'd separate by space.
   const sectionText = section
     .filter((_, i) => i === currentIndex)
     .text()
